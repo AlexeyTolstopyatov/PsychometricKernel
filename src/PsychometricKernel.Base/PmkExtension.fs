@@ -1,7 +1,7 @@
 ﻿namespace PsychometricKernel.Base
 
 /// <summary>
-/// All plugins derived must be assigned by [PmkVersion] attrubute.
+/// All plugins derived must be assigned by [PmkVersion] attribute.
 /// If this not happened -> loader throws an error of plugin state and
 /// continues work without it.
 /// </summary>
@@ -13,7 +13,7 @@ type PmkExtension =
     /// 
     /// Let's see an example:
     /// 
-    /// `PsychometricKernel.Big5.dll` @ v1.0 has instansiated
+    /// `PsychometricKernel.Big5.dll` @ v1.0 has instantiated
     /// entities
     ///     * PmkBig5Extension -> PmkExtension "BIG-5 test analyser"
     ///     * PmkBig5SchemaExtension -> PmkExtension "BIG-5 test schema serializer"
@@ -23,7 +23,7 @@ type PmkExtension =
     /// <summary>
     /// Description of plugin will show you when you select
     /// plugin in menu before call initialization processes
-    /// This is an optional field but it would be better if you
+    /// This is an optional field but would be better if you
     /// set it with fully description of your library.
     /// </summary>
     abstract member Description : string with get

@@ -6,13 +6,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Library.fs" />
-        <Compile Include="PmkExtension.fs" />
-        <Compile Include="PmkVersionAttribute.fs" />
+        <Compile Include="Library.fs"/>
+        <Compile Include="PmkExtensionsLoader.fs" />
+        <Compile Include="PmkExtensionBuffer.fs" />
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="README.md" />
+      <ProjectReference Include="..\PsychometricKernel.Base\PsychometricKernel.Base.fsproj" />
     </ItemGroup>
 
 </Project>
