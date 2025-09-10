@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A3AA99F1-A472-4B5E-96F8-0EBEE0D99188}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{90EB5874-4B34-4691-B974-26E000263876}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PsychometricKernel.Base", "src\PsychometricKernel.Base\PsychometricKernel.Base.fsproj", "{8D4C80A5-0994-4A9C-B289-426DB7C093A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D4C80A5-0994-4A9C-B289-426DB7C093A0} = {A3AA99F1-A472-4B5E-96F8-0EBEE0D99188}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D4C80A5-0994-4A9C-B289-426DB7C093A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4C80A5-0994-4A9C-B289-426DB7C093A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4C80A5-0994-4A9C-B289-426DB7C093A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D4C80A5-0994-4A9C-B289-426DB7C093A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
