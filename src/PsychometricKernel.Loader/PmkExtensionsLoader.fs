@@ -10,17 +10,14 @@ open PsychometricKernel.Base
 type PmkExtensionsLoader() =
     let mutable results : List<PmkExtension> = []
     /// <summary>
-    /// Instantiate all plugins from .NET DLLs
-    /// and calls `TryInit()` function of each loaded plugin
+    /// Loads in memory filtered instances of derivatives
+    /// by <see cref="PmkExtension"/> from ".../Plugins"
+    /// in app domain
     /// </summary>
-    member private _.init(full_init : bool) : unit =
+    [<CompiledName "LoadAll">]
+    member public _.load_all() : unit =
         let dllPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Plugins");
         let parentType = typeof<PmkExtension>
-        let call_try_init (t : PmkExtension) : PmkExtension =
-            match full_init with
-            | true -> t.Init |> ignore
-            | _ -> t.TryInit |> ignore
-            t
         results <- Directory.GetFiles(dllPath, "*.dll")
             |> Seq.collect (fun file ->
                 try
@@ -41,7 +38,6 @@ type PmkExtensionsLoader() =
                             // check minor versions
                             Activator.CreateInstance(t)
                                 :?> PmkExtension
-                                |> call_try_init
                                 |> Some
                         with _ -> None
                     else None
@@ -53,3 +49,18 @@ type PmkExtensionsLoader() =
             // cast to F# list
             |> Seq.toList
         ()
+    [<CompiledName "InitAll">]
+    member public _.init_all(path : string) : List<int32> =
+        results |> List.map (fun p -> p.Init path)
+    
+    [<CompiledName "TryInitAll">]    
+    member public _.try_init_all(path : string) : List<bool> =
+        results |> List.map (fun p -> p.TryInit path)
+    
+    [<CompiledName "TryInit">]
+    member public _.try_init(index : int32, path : string) : bool =
+        results[index].TryInit path
+        
+    [<CompiledName "Init">]
+    member public _.init(index : int32, path : string) : int32 =
+        results[index].Init path
