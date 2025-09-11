@@ -8,7 +8,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PsychometricKernel.Base", "
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PsychometricKernel.Loader", "src\PsychometricKernel.Loader\PsychometricKernel.Loader.fsproj", "{D20DBFF4-9FE3-4B99-A289-D161F5710930}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PsychometricKernel.Metrics.Mbti", "src\PsychometricKernel.Metrics.Mbti\PsychometricKernel.Metrics.Mbti.fsproj", "{1F68D9EB-0B60-4A21-B808-6AF35457F059}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PsychometricKernel.Metrics.Positive", "PsychometricKernel.Metrics.Positive\PsychometricKernel.Metrics.Positive.fsproj", "{4FD3C1F8-84FB-469D-A1DB-0BEE450FE26B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,7 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8D4C80A5-0994-4A9C-B289-426DB7C093A0} = {A3AA99F1-A472-4B5E-96F8-0EBEE0D99188}
 		{D20DBFF4-9FE3-4B99-A289-D161F5710930} = {A3AA99F1-A472-4B5E-96F8-0EBEE0D99188}
-		{1F68D9EB-0B60-4A21-B808-6AF35457F059} = {A3AA99F1-A472-4B5E-96F8-0EBEE0D99188}
+		{4FD3C1F8-84FB-469D-A1DB-0BEE450FE26B} = {A3AA99F1-A472-4B5E-96F8-0EBEE0D99188}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8D4C80A5-0994-4A9C-B289-426DB7C093A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -29,9 +29,9 @@ Global
 		{D20DBFF4-9FE3-4B99-A289-D161F5710930}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D20DBFF4-9FE3-4B99-A289-D161F5710930}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D20DBFF4-9FE3-4B99-A289-D161F5710930}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F68D9EB-0B60-4A21-B808-6AF35457F059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F68D9EB-0B60-4A21-B808-6AF35457F059}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F68D9EB-0B60-4A21-B808-6AF35457F059}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F68D9EB-0B60-4A21-B808-6AF35457F059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD3C1F8-84FB-469D-A1DB-0BEE450FE26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD3C1F8-84FB-469D-A1DB-0BEE450FE26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD3C1F8-84FB-469D-A1DB-0BEE450FE26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD3C1F8-84FB-469D-A1DB-0BEE450FE26B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

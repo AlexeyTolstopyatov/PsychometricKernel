@@ -8,7 +8,6 @@
     <ItemGroup>
         <Compile Include="Library.fs"/>
         <Compile Include="PmkExtensionsLoader.fs" />
-        <Compile Include="PmkExtensionBuffer.fs" />
     </ItemGroup>
 
     <ItemGroup>

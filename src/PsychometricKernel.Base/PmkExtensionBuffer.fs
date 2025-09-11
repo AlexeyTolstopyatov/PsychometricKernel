@@ -1,11 +1,8 @@
-﻿namespace PsychometricKernel.Loader
+﻿namespace PsychometricKernel.Base
 
 open System
 
-// to consider -> doing smth.
-// considering => thinking about
-// it doesn't help that == that makes it worse
-// plenty of smth => too many things
+type CorList<'TAny> = System.Collections.Generic.List<'TAny>
 
 [<Class>]
 type PmkExtensionBuffer() =

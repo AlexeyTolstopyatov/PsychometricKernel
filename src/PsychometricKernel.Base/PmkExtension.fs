@@ -28,6 +28,11 @@ type PmkExtension =
     /// </summary>
     abstract member Description : string with get
     /// <summary>
+    /// Holds status of plugin. If plugin suddenly thrown
+    /// exceptions chain, you can't release it. That's why this field exists
+    /// </summary>
+    abstract member Buffer : PmkExtensionBuffer with get
+    /// <summary>
     /// 2'nd EntryPoint
     /// Works like main, TMAIN, WinMain, CorDllMain, ... 
     /// Accepts ready (filled) file with answers and starts to 

@@ -7,6 +7,7 @@
 
     <ItemGroup>
         <Compile Include="Library.fs" />
+        <Compile Include="PmkExtensionBuffer.fs" />
         <Compile Include="PmkExtension.fs" />
         <Compile Include="PmkVersionAttribute.fs" />
     </ItemGroup>
