@@ -1,6 +1,21 @@
+### Temporary data isolation.
 bin/
 obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
 .fake
+
+### Explicit content isolation
+# 
+# I must isolate client's and Windows drivers part of code for a some time
+# Client may become a gun that can give by userre the extremely 
+# wrong interpretation of raw data.
+# And Native Windows drivers was a proofs of wrong data
+# By the way, all data after Client's Window closing will be erased from media by Kernel API.
+# This is an social experiment which strongly requires local data processor and all personal information
+# must be binary-encoded removed at next step.  
+
+PsychometricKernel/src/PsychometricKernel.Crypto
+PsychometricKernel/src/PsychometricKernel
+# PsychometricKernel/src/PsychometricKernel.Eyes

@@ -10,6 +10,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PsychometricKernel.Loader",
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PsychometricKernel.Metrics.Positive", "PsychometricKernel.Metrics.Positive\PsychometricKernel.Metrics.Positive.fsproj", "{4FD3C1F8-84FB-469D-A1DB-0BEE450FE26B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychometricKernel", "src\PsychometricKernel\PsychometricKernel.csproj", "{DF89173D-DDAA-4725-94C1-6B119763016D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PsychometricKernel.Crypto", "src\PsychometricKernel.Crypto\PsychometricKernel.Crypto.fsproj", "{2C1207E9-5A08-4CBC-90BF-6B9A29823468}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,8 @@ Global
 		{8D4C80A5-0994-4A9C-B289-426DB7C093A0} = {A3AA99F1-A472-4B5E-96F8-0EBEE0D99188}
 		{D20DBFF4-9FE3-4B99-A289-D161F5710930} = {A3AA99F1-A472-4B5E-96F8-0EBEE0D99188}
 		{4FD3C1F8-84FB-469D-A1DB-0BEE450FE26B} = {A3AA99F1-A472-4B5E-96F8-0EBEE0D99188}
+		{DF89173D-DDAA-4725-94C1-6B119763016D} = {A3AA99F1-A472-4B5E-96F8-0EBEE0D99188}
+		{2C1207E9-5A08-4CBC-90BF-6B9A29823468} = {A3AA99F1-A472-4B5E-96F8-0EBEE0D99188}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8D4C80A5-0994-4A9C-B289-426DB7C093A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -33,5 +39,13 @@ Global
 		{4FD3C1F8-84FB-469D-A1DB-0BEE450FE26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FD3C1F8-84FB-469D-A1DB-0BEE450FE26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FD3C1F8-84FB-469D-A1DB-0BEE450FE26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF89173D-DDAA-4725-94C1-6B119763016D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF89173D-DDAA-4725-94C1-6B119763016D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF89173D-DDAA-4725-94C1-6B119763016D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF89173D-DDAA-4725-94C1-6B119763016D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C1207E9-5A08-4CBC-90BF-6B9A29823468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C1207E9-5A08-4CBC-90BF-6B9A29823468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C1207E9-5A08-4CBC-90BF-6B9A29823468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C1207E9-5A08-4CBC-90BF-6B9A29823468}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
