@@ -1,7 +1,0 @@
-﻿[
-  {
-    "question" : "This test has a following format. same values in map are sums and you give result.",
-    "suggestions" : ["a", "b", "c", "d", "...", "sets by program"],
-    "answers" : ["c", "a", "sets by user"]
-  }
-]
