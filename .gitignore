@@ -16,6 +16,6 @@ riderModule.iml
 # This is an social experiment which strongly requires local data processor and all personal information
 # must be binary-encoded removed at next step.  
 
-src/PsychometricKernel.Crypto
-src/PsychometricKernel
+PsychometricKernel.Crypto
+PsychometricKernel
 # PsychometricKernel/src/PsychometricKernel.Eyes

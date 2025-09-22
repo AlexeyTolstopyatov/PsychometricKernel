@@ -10,6 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\PsychometricKernel.Base\PsychometricKernel.Base.fsproj" />
       <ProjectReference Include="..\src\PsychometricKernel.Base\PsychometricKernel.Base.fsproj" />
     </ItemGroup>
 

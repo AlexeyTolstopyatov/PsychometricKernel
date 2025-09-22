@@ -1,9 +1,7 @@
 ﻿namespace PsychometricKernel.Metrics.Positive
 
 open System
-open System.Buffers.Text
 open System.IO
-open System.Net.Mime
 open System.Text.Json
 open System.Text.Json.Serialization
 open PsychometricKernel.Base
@@ -44,14 +42,13 @@ type PositiveMetricsExtension = inherit PmkExtension with
     
     override this.Init(source : string) : int32 =
         try
-            let test_blocks =
+            let _test_blocks =
                 File.ReadAllText source
                 |> JsonDocument.Parse
                 |> JsonSerializer.Deserialize<PositiveMetricsBlock[]>
                 |> Seq.toList
             // match all blocks to dictionary blocks
             // answer of key -> {key: sum_of_all_answers}
-            
             0
         with
         | _ -> -1
@@ -66,7 +63,7 @@ type PositiveMetricsExtension = inherit PmkExtension with
                 |> Array.map (fun (key, blocks) ->
                     {
                         Key = key
-                        Value =  blocks |> Array.sumBy (fun b -> b.Answer)
+                        Value =  blocks |> Array.sumBy (_.Answer)
                     }
                 )
                 |>  JsonSerializer.Serialize

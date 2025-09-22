@@ -34,10 +34,10 @@ type PmkExtension =
     abstract member Buffer : PmkExtensionBuffer with get
     /// <summary>
     /// 2'nd EntryPoint
-    /// Works like main, TMAIN, WinMain, CorDllMain, ... 
+    /// Works like main, _TMAIN, WinMain, CorDllMain, ... 
     /// Accepts ready (filled) file with answers and starts to 
     /// make results. Returns state of operation and fills 
-    /// PmkExtentionBuffer with collection of results. 
+    /// PmkExtensionBuffer with collection of results. 
     /// </summary>
     abstract member Init : source : string -> int32
     /// <summary>

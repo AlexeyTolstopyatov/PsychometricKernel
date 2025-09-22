@@ -3,8 +3,8 @@ namespace PsychometricKernel.Base
 open System
 
 /// <summary>
-/// Tells loader use another schema for instanicating
+/// Tells loader use another schema for instanticating
 /// the implemented PMK extension.
 /// </summary>
 [<Class>]
-type PmkBinaryDataAtribute() = inherit Attribute()
+type PmkBinaryDataAttribute() = inherit Attribute()
